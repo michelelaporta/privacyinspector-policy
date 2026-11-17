@@ -1,6 +1,6 @@
 # PrivacyInspector — Privacy Policy
 
-This repository hosts the privacy policy for the **PrivacyInspector** Android app ([com.adinspector.app](https://play.google.com/store/apps/details?id=com.adinspector.app)).
+This repository hosts the privacy policy for the **PrivacyInspector** Android app ([com.privacy.inspector.app](https://play.google.com/store/apps/details?id=com.privacy.inspector.app)).
 
 **Privacy Policy URL:** https://michelelaporta.github.io/privacyinspector-policy/
 
