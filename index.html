@@ -1,64 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>PrivacyInspector — Privacy Policy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap">
+
 <style>
 :root {
-  --bg: #FFFFFF; --fg: #0F1623; --muted: #64748B;
-  --accent: #4A148C; --border: #E2E8F0; --surface: #F8F5FF;
+  --bg: #FFFFFF;
+  --fg: #0F1623;
+  --muted: #64748B;
+  --accent: #4A148C;
+  --border: #E2E8F0;
+  --surface: #F8F5FF;
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #0D1117; --fg: #E6EDF3; --muted: #8B949E;
     --accent: #CE93D8; --border: #21262D; --surface: #161022;
     color-scheme: dark;
   }
 }
+:root[data-theme="dark"] {
+  --bg: #0D1117; --fg: #E6EDF3; --muted: #8B949E;
+  --accent: #CE93D8; --border: #21262D; --surface: #161022;
+  color-scheme: dark;
+}
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
   font-family: 'Inter', system-ui, sans-serif;
   background: var(--bg); color: var(--fg);
-  padding: 32px 16px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 32px;
   max-width: 720px;
   margin: 0 auto;
 }
-header { border-bottom: 2px solid var(--accent); padding-bottom: 20px; margin-bottom: 32px; }
+
+header {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 20px;
+  margin-bottom: 32px;
+}
 header .app-name {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 22px; font-weight: 700; color: var(--accent); margin-bottom: 4px;
+  font-size: 22px; font-weight: 700; color: var(--accent);
+  margin-bottom: 4px;
 }
 header .meta { font-size: 13px; color: var(--muted); }
+
 h2 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 16px; font-weight: 600; color: var(--accent);
   margin-top: 32px; margin-bottom: 10px;
 }
-p { font-size: 14px; line-height: 1.75; margin-bottom: 10px; }
+p { font-size: 14px; line-height: 1.75; color: var(--fg); margin-bottom: 10px; }
 ul { padding-left: 20px; margin-bottom: 10px; }
 li { font-size: 14px; line-height: 1.75; margin-bottom: 4px; }
+
 .highlight {
   background: var(--surface);
   border-left: 3px solid var(--accent);
   border-radius: 0 6px 6px 0;
-  padding: 12px 16px; margin: 16px 0;
+  padding: 12px 16px;
+  margin: 16px 0;
   font-size: 14px; line-height: 1.7;
 }
-a { color: var(--accent); }
+
 footer {
-  margin-top: 48px; padding-top: 20px;
+  margin-top: 48px;
+  padding-top: 20px;
   border-top: 1px solid var(--border);
   font-size: 12px; color: var(--muted);
 }
 </style>
-</head>
-<body>
 
 <header>
   <div class="app-name">PrivacyInspector</div>
-  <div class="meta">Privacy Policy · Effective date: November 17, 2025</div>
+  <div class="meta">Privacy Policy · Effective date: November 25, 2026</div>
 </header>
 
 <div class="highlight">
@@ -82,11 +100,13 @@ footer {
 <p>Your Advertising ID history is stored exclusively in your device's local shared preferences (private app storage). This data is never transmitted anywhere and is deleted when you uninstall the app.</p>
 
 <h2>4. Exodus Privacy Integration</h2>
-<p>When you tap the "Enrich with Exodus" button, the app sends HTTP requests to <strong>exodus-privacy.eu.org</strong> — a third-party, non-profit tracker database — containing only the package names of apps being looked up. No personal data is included in these requests. This feature is entirely optional and only activated on user action. Please refer to the <a href="https://exodus-privacy.eu.org/en/page/privacy/">Exodus Privacy privacy policy</a> for information about how they handle these requests.</p>
+<p>When you tap the "Enrich with Exodus" button, the app sends HTTP requests to <strong>exodus-privacy.eu.org</strong> — a third-party, non-profit tracker database — containing only the package names of apps being looked up. No personal data is included in these requests. This feature is entirely optional and only activated on user action. Please refer to the <a href="https://exodus-privacy.eu.org/en/page/privacy/" style="color:var(--accent)">Exodus Privacy privacy policy</a> for information about how they handle these requests.</p>
 
-<h2>5. Advertising</h2>
-<p>PrivacyInspector displays a banner advertisement provided by Google AdMob. AdMob may use your Advertising ID to serve personalised ads based on your interests. You can opt out at any time by enabling "Opt out of Ads Personalisation" in your Android device settings (<em>Settings → Privacy → Ads</em>), or by resetting your Advertising ID using the Reset ID button in this app.</p>
-<p>For more information on how Google uses data from apps that use AdMob, see: <a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a></p>
+<h2>5. Advertising &amp; Consent</h2>
+<p>PrivacyInspector displays banner advertisements provided by <strong>Google AdMob</strong>. AdMob may use your Advertising ID to serve personalised ads based on your interests.</p>
+<p><strong>Consent (EU/EEA users):</strong> If you are located in the European Union or European Economic Area, the app will present a consent dialog — powered by <strong>Google User Messaging Platform (UMP)</strong> — before initialising any advertising SDK. Personalised ads are only served if you grant consent. You may withdraw or change your consent at any time by clearing the app's data (<em>Settings → Apps → PrivacyInspector → Clear Data</em>).</p>
+<p>You can also opt out at any time by enabling "Opt out of Ads Personalisation" in your device settings (<em>Settings → Privacy → Ads</em>), or by resetting your Advertising ID using the Reset ID button in this app.</p>
+<p>For more information on how Google uses data from apps that use AdMob and UMP, see: <a href="https://policies.google.com/technologies/partner-sites" style="color:var(--accent)">policies.google.com/technologies/partner-sites</a></p>
 
 <h2>6. Permissions Used by This App</h2>
 <ul>
@@ -105,8 +125,7 @@ footer {
 <p>If you have any questions about this privacy policy, please contact us via the Play Store developer page.</p>
 
 <footer>
-  PrivacyInspector · Package: com.privacy.inspector.app · Last updated: November 17, 2025
+  PrivacyInspector · Package: com.privacy.inspector.app · Last updated: November 25, 2026
 </footer>
 
-</body>
-</html>
+</body></html>
